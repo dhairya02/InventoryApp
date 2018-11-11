@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- supplier_options -->
+    <string-array name="supplier_options">
+        <item>@string/supplier_unknown</item>
+        <item>@string/supplier_ranbaxy</item>
+        <item>@string/supplier_sun_pharma</item>
+        <item>@string/supplier_cipla</item>
+        <item>@string/supplier_ajanta</item>
+    </string-array>
+</resources>

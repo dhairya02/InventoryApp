@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Medical Shop Inventory</string>
+
+    <!-- activity_inventory -->
+    <string name="empty_view_text">Get started by adding medicines for refill!!!</string>
+    <string name="action_delete_all">Delete All Medicines</string>
+    <string name="delete_all_dialog_msg">Delete All these Medicines ?</string>
+    <!-- activity_editor -->
+    <string name="add">Add New Medicine</string>
+    <string name="editor">Medicine Editor</string>
+    <string name="edit_medicine">Edit</string>
+
+    <!--  supplier name list -->
+    <string name="supplier_unknown">Unknown</string>
+    <string name="supplier_ranbaxy">Ranbaxy</string>
+    <string name="supplier_sun_pharma">Sun Pharma</string>
+    <string name="supplier_cipla">Cipla</string>
+    <string name="supplier_ajanta">Ajanta</string>
+
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- activity_view -->
+    <string name="medicine_view">Medicine view Details</string>
+    <string name="delete_dialog_msg">Delete this Medicine?</string>
+    <string name="quantity_change_msg">Quantity was change</string>
+    <string name="quantity_finish_msg">Medicine was finish :( , buy another Medicine</string>
+
+    <!-- activity_view and activity_editor-->
+    <string name="medicine_name">Medicine Name</string>
+    <string name="medicine_price">Price</string>
+    <string name="medicine_quantity">Quantity</string>
+    <string name="medicine_supplier_name">Supplier Name</string>
+    <string name="medicine_supplier_phone_number">Supplier Phone Number</string>
+
+
+    <string name="action_save">Save</string>
+    <string name="empty_list">Save</string>
+
+    <string name="insert_failed">Error with saving medicine</string>
+    <string name="insert_successful">Medicine saved successfully</string>
+
+    <string name="update_failed">Error with updating medicine</string>
+    <string name="update_successful">Medicine updated successfully</string>
+
+
+    <string name="deleted_all_medicines_message">rows deleted from medicine table</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="delete_medicine_successful">Medicine deleted</string>
+    <string name="delete_medicine_failed">Error with deleting Medicine</string>
+
+    <string name="medicine_name_required">Medicine name required</string>
+    <string name="filed_required">please fill all filed form to insert an new medicine</string>
+    <string name="price_required">Medicine price required</string>
+    <string name="quantity_required">Medicine quantity required</string>
+    <string name="supplier_name_required">Supplier Name required</string>
+    <string name="supplier_phone_required">Supplier Phone required</string>
+</resources>
