@@ -32,6 +32,7 @@ public class CursorAdapterActivity extends CursorAdapter {
         TextView NameTextView = view.findViewById(R.id.name_text_view);
         TextView PriceTextView = view.findViewById(R.id.price_text_view);
         TextView QuantityTextView = view.findViewById(R.id.quantity_text_view);
+        Button productSaleButton = view.findViewById(R.id.sale_button);
 
         final int columnIdIndex = cursor.getColumnIndex(InventoryEntry._ID);
         int NameColumnIndex = cursor.getColumnIndex(InventoryEntry.COLUMN_NAME);
@@ -42,6 +43,15 @@ public class CursorAdapterActivity extends CursorAdapter {
         String Name = cursor.getString(NameColumnIndex);
         String Price = cursor.getString(PriceColumnIndex);
         final String Quantity = cursor.getString(QuantityColumnIndex);
+
+        productSaleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                CatalogActivity Activity = (CatalogActivity) context;
+                Activity.SaleCount(Integer.valueOf(medicineID), Integer.valueOf(Quantity));
+            }
+        });
 
 
         NameTextView.setText(medicineID + " ) " + Name);

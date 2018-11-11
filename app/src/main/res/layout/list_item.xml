@@ -17,7 +17,7 @@
                 android:layout_marginRight="@dimen/list_item_textview_marginRight"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
-                tools:text="Medicine name" />
+                tools:text="medicine name" />
         </LinearLayout>
 
         <LinearLayout
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorPrimary"
-                tools:text="Medicine quantity" />
+                tools:text="medicine quantity" />
         </LinearLayout>
     </LinearLayout>
 
@@ -44,7 +44,7 @@
                     android:id="@+id/price_text_view"
                     style="@style/ListItemText"
                     android:layout_width="wrap_content"
-                    tools:text="Medicine price" />
+                    tools:text="medicine price" />
             </LinearLayout>
 
             <LinearLayout style="@style/ListItemLinearLayoutsection2">
@@ -52,6 +52,11 @@
                 <LinearLayout style="@style/ListItemLinearLayoutsection1">
 
                     <LinearLayout style="@style/ListItemLinearLayoutsection2">
+
+                        <Button
+                            android:id="@+id/sale_button"
+                            style="@style/ListItembuttonstyle"
+                            android:text="Sale" />
                     </LinearLayout>
 
                     <LinearLayout

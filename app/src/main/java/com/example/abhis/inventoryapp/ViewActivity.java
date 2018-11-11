@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.example.abhis.inventoryapp.data.InventoryContract.InventoryEntry;
 
 public class ViewActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
@@ -131,6 +132,16 @@ public class ViewActivity extends AppCompatActivity implements LoaderManager.Loa
                 @Override
                 public void onClick(View v) {
                     showDeleteConfirmationDialog();
+                }
+            });
+
+            Button phoneButton = findViewById(R.id.phone_button);
+            phoneButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String phone = String.valueOf(currentSupplierPhone);
+                    Intent intent = new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phone, null));
+                    startActivity(intent);
                 }
             });
 

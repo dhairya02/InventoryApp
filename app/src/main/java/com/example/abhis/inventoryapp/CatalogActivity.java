@@ -3,6 +3,7 @@ package com.example.abhis.inventoryapp;
 import android.app.AlertDialog;
 import android.app.LoaderManager;
 import android.content.ContentUris;
+import android.content.ContentValues;
 import android.content.CursorLoader;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -133,6 +134,20 @@ public class CatalogActivity extends AppCompatActivity implements LoaderManager.
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+    }
+
+    public void SaleCount(int productID, int productQuantity) {
+        productQuantity = productQuantity - 1;
+        if (productQuantity >= 0) {
+            ContentValues values = new ContentValues();
+            values.put(InventoryEntry.COLUMN_QUANTITY, productQuantity);
+            Uri updateUri = ContentUris.withAppendedId(InventoryEntry.CONTENT_URI, productID);
+            int rowsAffected = getContentResolver().update(updateUri, values, null, null);
+            Toast.makeText(this, "Quantity was change", Toast.LENGTH_SHORT).show();
+
+        } else {
+            Toast.makeText(this, "Product was finish :( , buy another Product", Toast.LENGTH_SHORT).show();
+        }
     }
 
 }
