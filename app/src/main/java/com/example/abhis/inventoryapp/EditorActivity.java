@@ -22,6 +22,7 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
 import com.example.abhis.inventoryapp.data.InventoryContract.InventoryEntry;
 
 
@@ -286,12 +287,12 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             int currentPrice = cursor.getInt(priceColumnIndex);
             int currentQuantity = cursor.getInt(quantityColumnIndex);
             int currentSupplierName = cursor.getInt(supplierNameColumnIndex);
-            int currentSupplierPhone = cursor.getInt(supplierPhoneColumnIndex);
+            String currentSupplierPhone = cursor.getString(supplierPhoneColumnIndex);
 
             mNameEditText.setText(currentName);
             mPriceEditText.setText(Integer.toString(currentPrice));
             mQuantityEditText.setText(Integer.toString(currentQuantity));
-            mSupplierPhoneNumberEditText.setText(Integer.toString(currentSupplierPhone));
+            mSupplierPhoneNumberEditText.setText(currentSupplierPhone);
 
             switch (currentSupplierName) {
                 case InventoryEntry.SUPPLIER_RANBAXY:
